@@ -1,5 +1,5 @@
 .container {
-  padding: 0 2rem;
+  padding: 0 80px;
 }
 
 .main {
@@ -112,6 +112,10 @@
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+
+  .container {
+    padding: 0 24px;
   }
 }
 
