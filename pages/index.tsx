@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import { Header } from "../components/Header";
 import { Hero } from "../components/Hero";
 import { FoodBlock } from "../components/FoodBlock";
+import { FeaturedHardware } from "../components/FeaturedHardware";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <main className="scroll-smooth">
         <Hero />
         <FoodBlock />
+        <FeaturedHardware />
       </main>
 
       <footer></footer>

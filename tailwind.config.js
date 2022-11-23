@@ -12,6 +12,9 @@ module.exports = {
         subtitle: "#767676",
         background: "#FEF9F7",
       },
+      backgroundImage: {
+        featured: "url('/images/forma.png')",
+      },
     },
   },
   plugins: [],
