@@ -1,13 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+@font-face {
+  font-family: "CharlevoixPro";
+  src: url("../public/fonts/CharlevoixPro-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CharlevoixPro";
+  src: url("../public/fonts/CharlevoixPro-Medium.otf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CharlevoixPro";
+  src: url("../public/fonts/CharlevoixPro-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
 html,
 body {
   scroll-behavior: smooth;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* 
+  TODO: Ask in interview, this seems to be the correct font for what the designs show, but it's not the same weight.
+  font-weight: 300; 
+  */
 }
 
 a {

@@ -81,10 +81,10 @@ export function FeaturedHardware() {
         <MobileCarousel />
         <DesktopCarousel />
         <div className="md:max-w-[400px] lg:max-w-[460px] mx-auto sm:mx-0 px-6 lg:px-0 mt-16 md:mt-0">
-          <h2 className="text-4xl leading-[43px]">
+          <h2 className="text-4xl leading-[43px] font-bold mb-4">
             Mejor para ellos, más fácil y cómodo para ti
           </h2>
-          <span>
+          <span className="text-base leading-6 text-[#111111]">
             Con Kibus, nunca tendrás que preocuparte de cómo ofrecer una dieta
             sana y natural a tu perro de forma cómoda y rápida. Nuestro
             dispositivo cocina automáticamente la cantidad exacta en cada comida

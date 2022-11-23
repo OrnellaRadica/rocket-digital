@@ -62,11 +62,13 @@ export function FoodBlock() {
                   variant="gray"
                   icon={<ArrowSimple />}
                   className="max-w-max gap-2"
+                  href="https://www.typeform.com/es/"
+                  target="_blank"
                 >
                   {block.button}
                 </Button>
               ) : null}
-              <span className="mt-6 text-subtitle text-base leading-5">
+              <span className="mt-6 text-subtitle text-base leading-5 font-[CharlevoixPro] font-normal">
                 {block.subtitle}
               </span>
             </div>
