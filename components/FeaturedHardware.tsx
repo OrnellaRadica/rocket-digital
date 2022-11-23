@@ -4,19 +4,19 @@ import Button from "./Button";
 import { ArrowCircle, ArrowSimple } from "./Icons";
 
 const images = [
-  "/../public/images/featured-1.png",
-  "/../public/images/featured-2.jpeg",
-  "/../public/images/featured-3.jpeg",
-  "/../public/images/featured-4.jpeg",
+  "/images/featured-1.png",
+  "/images/featured-2.jpeg",
+  "/images/featured-3.jpeg",
+  "/images/featured-4.jpeg",
 ];
 
 function MobileCarousel() {
   return (
-    <div className="md:hidden bg-featured bg-contain bg-no-repeat gap-4 bg-center w-auto min-h-[400px] flex justify-start md:justify-center items-center relative  overflow-x-scroll ml-6 lg:ml-20">
+    <div className="md:hidden bg-featured bg-contain bg-no-repeat gap-4 bg-center w-auto min-h-[400px] flex justify-start md:justify-center items-center relative  overflow-x-scroll lg:ml-20">
       {images.map((image) => (
         <div
           key={image}
-          className="rounded-[25px] overflow-hidden min-w-[90%] md:min-w-0 my-10 max-w-[600px]"
+          className="first-of-type:ml-6 last-of-type:mr-6 rounded-[25px] overflow-hidden min-w-[85%] md:min-w-0 my-10 max-w-[600px]"
         >
           <Image
             src={image}

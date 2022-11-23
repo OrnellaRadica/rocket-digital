@@ -7,7 +7,7 @@ export function Footer() {
     <section id="footer" className="w-full py-16 bg-[#111111] text-white">
       <div className="max-w-[1500px] mx-auto px-6 lg:px-20">
         <Image
-          src="/../public/images/logo-footer.png"
+          src="/images/logo-footer.png"
           alt="logo footer"
           width={44}
           height={38}

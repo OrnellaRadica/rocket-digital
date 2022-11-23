@@ -8,28 +8,28 @@ const blocks = [
     title: "Pollo y Pimiento",
     alt: "Pollo y Pimiento",
     subtitle: "Energética, con ingredientes antioxidantes",
-    image: "/../public/images/pollo-pim.jpg",
+    image: "/images/pollo-pim.jpg",
   },
   {
     id: "block1",
     title: "Salmón y Arroz",
     alt: "Salmón y Arroz",
     subtitle: "Ipoalergénica, con Omega 3 y 6",
-    image: "/../public/images/salmon-arroz.png",
+    image: "/images/salmon-arroz.png",
   },
   {
     id: "block2",
     title: "Cerdo y Calabaza",
     alt: "Cerdo y Calabaza",
     subtitle: "para dar vitalidad buena para el sistema inmune",
-    image: "/../public/images/cerdo-cal.png",
+    image: "/images/cerdo-cal.png",
   },
   {
     id: "block3",
     button: "Tu Receta",
     alt: "Tu Receta",
     subtitle: "Ayúdanos a decidir nuestra nueva receta",
-    image: "/../public/images/receta.png",
+    image: "/images/receta.png",
   },
 ];
 

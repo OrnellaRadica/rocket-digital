@@ -39,7 +39,7 @@ export function Evaluation() {
       <div className="max-w-[1500px] mx-auto lg:px-20 md:flex md:flex-row-reverse md:justify-center md:items-start lg:gap-20">
         <div className="relative">
           <Image
-            src="/../public/images/image-13.png"
+            src="/images/image-13.png"
             alt="maquina"
             width={610}
             height={550}
@@ -47,7 +47,7 @@ export function Evaluation() {
           />
           <div className="absolute bottom-0 right-10 w-[50%] md:top-24 md:right-0">
             <Image
-              src="/../public/images/image-15.png"
+              src="/images/image-15.png"
               alt="telefono"
               width={220}
               height={520}

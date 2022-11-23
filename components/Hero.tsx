@@ -8,7 +8,7 @@ export function Hero() {
       <div className="sm:flex sm:flex-row-reverse justify-between items-center gap-4 max-w-[1500px] mx-auto px-6 lg:px-20">
         <div className="mb-10 sm:mb-0 max-w-md ml-auto mr-auto lg:max-w-none lg:m-0">
           <Image
-            src="/../public/images/hero_image.png"
+            src="/images/hero_image.png"
             alt="perro con su dueña"
             width={690}
             height={700}
