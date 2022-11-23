@@ -14,9 +14,11 @@ function MobileCarousel() {
   return (
     <div className="md:hidden bg-featured bg-contain bg-no-repeat gap-4 bg-center w-auto min-h-[400px] flex justify-start md:justify-center items-center relative  overflow-x-scroll ml-6 lg:ml-20">
       {images.map((image) => (
-        <div className="rounded-[25px] overflow-hidden min-w-[90%] md:min-w-0 my-10 max-w-[600px]">
+        <div
+          key={image}
+          className="rounded-[25px] overflow-hidden min-w-[90%] md:min-w-0 my-10 max-w-[600px]"
+        >
           <Image
-            key={image}
             src={image}
             alt="kibus"
             width={680}
