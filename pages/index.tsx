@@ -5,6 +5,7 @@ import { Header } from "../components/Header";
 import { Hero } from "../components/Hero";
 import { FoodBlock } from "../components/FoodBlock";
 import { FeaturedHardware } from "../components/FeaturedHardware";
+import { Evaluation } from "../components/Evaluation";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
         <Hero />
         <FoodBlock />
         <FeaturedHardware />
+        <Evaluation />
       </main>
 
       <footer></footer>
