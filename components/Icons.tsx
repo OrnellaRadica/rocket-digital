@@ -46,3 +46,52 @@ export function Logo() {
     </svg>
   );
 }
+
+export function ArrowCircle() {
+  return (
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M10 19C14.9699 19 19 14.9709 19 10C19 5.03005 14.9699 1 10 1C5.03005 1 1 5.03005 1 10C1 14.9709 5.03005 19 10 19Z"
+        stroke="#EE7333"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M8.59668 13.3774L11.9885 10.0002L8.59668 6.623"
+        stroke="#EE7333"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+export function ArrowSimple() {
+  return (
+    <svg
+      width="9"
+      height="15"
+      viewBox="0 0 9 15"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M1.5 1.49994L7.5 7.49944L1.5 13.4999"
+        stroke="white"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}

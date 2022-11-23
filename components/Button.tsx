@@ -16,7 +16,7 @@ export interface ButtonProps {
 const Button: React.FC<ButtonProps> = ({
   children,
   variant = "primary",
-  type,
+  type = "button",
   onClick,
   href,
   className,

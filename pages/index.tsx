@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { Header } from "../components/Header";
 import { Hero } from "../components/Hero";
+import { FoodBlock } from "../components/FoodBlock";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
 
       <main className="scroll-smooth">
         <Hero />
+        <FoodBlock />
       </main>
 
       <footer></footer>
