@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FacebookIcon, InstagramIcon, PaymentIcon, YoutubeIcon } from "./Icons";
 
 export function Footer() {
@@ -28,30 +29,30 @@ export function Footer() {
               Políticas
             </h4>
             <div className="flex flex-col gap-4 min-w-[164px]">
-              <a href="/" className="">
+              <Link href="/" className="">
                 Políticas de Privacidad
-              </a>
-              <a href="/" className="">
+              </Link>
+              <Link href="/" className="">
                 Condiciones de uso
-              </a>
-              <a href="/" className="">
+              </Link>
+              <Link href="/" className="">
                 Cookies
-              </a>
-              <a href="/" className="">
+              </Link>
+              <Link href="/" className="">
                 FAQ
-              </a>
+              </Link>
             </div>
           </div>
           <div className="flex gap-10 mb-12 lg:mb-0">
-            <a href="/">
+            <Link href="/">
               <FacebookIcon />
-            </a>
-            <a href="/">
+            </Link>
+            <Link href="/">
               <InstagramIcon />
-            </a>
-            <a href="/">
+            </Link>
+            <Link href="/">
               <YoutubeIcon />
-            </a>
+            </Link>
           </div>
           <div>
             <h4 className="text-[22px] leading-[28px] font-bold mb-[6px]">
