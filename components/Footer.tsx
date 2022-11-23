@@ -13,7 +13,7 @@ export function Footer() {
         />
         <div className="sm:flex sm:flex-wrap sm:justify-between sm:gap-8">
           <div className="max-w-[380px] mb-12 lg:mb-0">
-            <h4 className="text-[22px] leading-[28px] font-bold">
+            <h4 className="text-[22px] leading-[28px] font-bold mb-[6px]">
               Sobre KIBUS
             </h4>
             <span className="text-base leading-6">

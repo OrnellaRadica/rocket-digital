@@ -5,7 +5,7 @@ const items = [
   {
     id: "item1",
     icon: <Time />,
-    title: "Programmable 24h",
+    title: "Programable 24h",
   },
   {
     id: "item2",
@@ -54,7 +54,7 @@ export function Evaluation() {
             />
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-y-8 mt-8 md:mt-0 md:flex md:flex-col md:gap-8  px-6 lg:px-0">
+        <div className="grid grid-cols-2 gap-y-8 mt-8 md:mt-0 md:flex md:flex-col md:gap-8  px-6 lg:px-0 sm:min-w-[312px]">
           {items.map((item) => (
             <div
               key={item.id}

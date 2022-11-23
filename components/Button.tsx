@@ -5,6 +5,7 @@ import Link from "next/link";
 export interface ButtonProps {
   onClick?: () => void;
   href?: string;
+  target?: React.HTMLAttributeAnchorTarget;
   children: string;
   variant?: "primary" | "secondary" | "gray";
   type?: "button" | "submit";
@@ -21,6 +22,7 @@ const Button: React.FC<ButtonProps> = ({
   href,
   className,
   ariaLabel,
+  target,
   icon,
 }) => {
   const classesButton = classnames({
@@ -30,7 +32,7 @@ const Button: React.FC<ButtonProps> = ({
       variant === "primary",
     "text-primary bg-transparent border border-primary active:bg-primary/40":
       variant === "secondary",
-    "text-white bg-secondary border border-secondary active:bg-secondary/40 active:text-secondary":
+    "text-white bg-secondary border border-secondary active:bg-gray-400 active:text-secondary":
       variant === "gray",
     "flex gap-4 justify-center items-center": icon !== null,
     [`${className}`]: className ? true : false,
@@ -38,7 +40,7 @@ const Button: React.FC<ButtonProps> = ({
 
   if (href) {
     return (
-      <Link href={href} className={classesButton}>
+      <Link href={href} className={classesButton} target={target}>
         {children} {icon ? icon : null}
       </Link>
     );
