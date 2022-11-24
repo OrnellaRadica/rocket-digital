@@ -1,4 +1,6 @@
+import { motion, useInView } from "framer-motion";
 import Image from "next/image";
+import { MutableRefObject, useRef } from "react";
 import { Time, Water, Quantity, History, Wash, App } from "./Icons";
 
 const items = [
@@ -34,8 +36,10 @@ const items = [
   },
 ];
 export function Evaluation() {
+  const ref: MutableRefObject<null | HTMLElement> = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
-    <section className="bg-background w-full py-16">
+    <section ref={ref} className="bg-background w-full py-16">
       <div className="max-w-[1500px] mx-auto lg:px-20 md:flex md:flex-row-reverse md:justify-center md:items-start lg:gap-20">
         <div className="relative">
           <Image
@@ -55,10 +59,17 @@ export function Evaluation() {
           </div>
         </div>
         <div className="grid grid-cols-2 gap-y-8 mt-8 md:mt-0 md:flex md:flex-col md:gap-8  px-6 lg:px-0 sm:min-w-[312px]">
-          {items.map((item) => (
-            <div
+          {items.map((item, index) => (
+            <motion.div
               key={item.id}
               className="flex flex-col md:flex-row gap-4 justify-start items-center"
+              style={{
+                transform: isInView ? "none" : "scale(0.3)",
+                opacity: isInView ? 1 : 0,
+                transition: `all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) ${
+                  index * 250
+                }ms`,
+              }}
             >
               <div className="w-11 flex items-center justify-center">
                 {item.icon}
@@ -66,7 +77,7 @@ export function Evaluation() {
               <div className="font-semibold text-base leading-5 text-center">
                 {item.title}
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Button from "./Button";
 import { ArrowSimple } from "../components/Icons";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { MutableRefObject, useRef } from "react";
 
 const blocks = [
   {
@@ -34,9 +36,16 @@ const blocks = [
 ];
 
 export function FoodBlock() {
+  const ref: MutableRefObject<null | HTMLDivElement> = useRef(null);
+  const { scrollYProgress } = useScroll({ target: ref });
+  const y = useTransform(scrollYProgress, [0, 1], ["0px", "100px"]);
   return (
     <section className="w-full foodblock-background">
-      <div className="max-w-[1500px] mx-auto lg:px-20 overflow-hidden">
+      <motion.div
+        className="max-w-[1500px] mx-auto lg:px-20 overflow-hidden"
+        ref={ref}
+        style={{ y }}
+      >
         <div className="flex gap-4 justify-between foodblock-shadow mx-6 rounded-[20px] px-8 py-14 my-16 lg:px-[90px] lg:py-[83px] lg:mx-auto bg-white overflow-hidden w-full	overflow-x-scroll">
           {blocks.map((block) => (
             <div
@@ -74,7 +83,7 @@ export function FoodBlock() {
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
