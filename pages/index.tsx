@@ -8,7 +8,7 @@ import { Footer } from "../components/Footer";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Ornella Radica - Kibus</title>
         <meta
@@ -28,10 +28,9 @@ export default function Home() {
         <FoodBlock />
         <FeaturedHardware />
         <Evaluation />
-        <Footer />
       </main>
 
-      <footer></footer>
-    </div>
+      <Footer />
+    </>
   );
 }

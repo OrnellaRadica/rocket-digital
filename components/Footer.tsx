@@ -4,7 +4,7 @@ import { FacebookIcon, InstagramIcon, PaymentIcon, YoutubeIcon } from "./Icons";
 
 export function Footer() {
   return (
-    <section id="footer" className="w-full py-16 bg-[#111111] text-white">
+    <footer id="footer" className="w-full py-16 bg-[#111111] text-white">
       <div className="max-w-[1500px] mx-auto px-6 lg:px-20">
         <Image
           src="/images/logo-footer.png"
@@ -62,6 +62,6 @@ export function Footer() {
           </div>
         </div>
       </div>
-    </section>
+    </footer>
   );
 }
